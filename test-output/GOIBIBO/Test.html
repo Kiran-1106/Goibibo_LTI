@@ -1,0 +1,334 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 08 19:55:54 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>744 seconds (744148 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.HotelPageTest.BookHotelTest()'><b>BookHotelTest</b><br>Test class: com.testcases.HotelPageTest<br>Parameters: Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "99598237"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[2]/div/div/div[2]/div/div[2]/div[1]&quot;}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-NJFUNEJK&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\amara\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17da7c58c9ae4152e67c2e9cfe207d83
+*** Element info: {Using=xpath, value=//div[2]/div/div/div[2]/div/div[2]/div[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.pages.HotelPage.BookHotel(HotelPage.java:74)
+	at com.testcases.HotelPageTest.BookHotelTest(HotelPageTest.java:65)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789821644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789821644'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[2]/div/div/div[2]/div/div[2]/div[1]&quot;}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-NJFUNEJK&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\amara\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17da7c58c9ae4152e67c2e9cfe207d83
+*** Element info: {Using=xpath, value=//div[2]/div/div/div[2]/div/div[2]/div[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.pages.HotelPage.BookHotel(HotelPage.java:74)
+	at com.testcases.HotelPageTest.BookHotelTest(HotelPageTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.LoginPageTest.ValidorInvalidMobileNoTest()'><b>ValidorInvalidMobileNoTest</b><br>Test class: com.testcases.LoginPageTest<br>Parameters: 9959823792</td>
+<td></td>
+<td>6</td>
+<td>com.testcases.LoginPageTest@33723e30</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.BookFlightTest()'><b>BookFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@gmail.com</td>
+<td></td>
+<td>34</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.BookFlightTest()'><b>BookFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com</td>
+<td></td>
+<td>42</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.SearchFlightTest()'><b>SearchFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220</td>
+<td></td>
+<td>21</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.SearchFlightTest()'><b>SearchFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Oneway, xyz, Pune, fare_20211215, </td>
+<td></td>
+<td>9</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.HotelPageTest.Validate_User_in_HotelPageTest()'><b>Validate_User_in_HotelPageTest</b><br>Test class: com.testcases.HotelPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.SearchFlightTest()'><b>SearchFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220</td>
+<td></td>
+<td>8</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.LoginPageTest.ValidorInvalidMobileNoTest()'><b>ValidorInvalidMobileNoTest</b><br>Test class: com.testcases.LoginPageTest<br>Parameters: 99598237</td>
+<td></td>
+<td>8</td>
+<td>com.testcases.LoginPageTest@33723e30</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.SearchFlightTest()'><b>SearchFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Roundtrip, xyz, Chennai, fare_20211215, fare_20211220</td>
+<td></td>
+<td>9</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.BookFlightTest()'><b>BookFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail.com</td>
+<td></td>
+<td>32</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.SearchFlightTest()'><b>SearchFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Oneway, Delhi, xyz, fare_20211215, </td>
+<td></td>
+<td>8</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.HotelPageTest.BookHotelTest()'><b>BookHotelTest</b><br>Test class: com.testcases.HotelPageTest<br>Parameters: Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, "9959823792"</td>
+<td></td>
+<td>38</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+<tr>
+<td title='com.testcases.HotelPageTest.BookHotelTest()'><b>BookHotelTest</b><br>Test class: com.testcases.HotelPageTest<br>Parameters: Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, "9959823792"</td>
+<td></td>
+<td>37</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.BookFlightTest()'><b>BookFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail</td>
+<td></td>
+<td>32</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.LoginPageTest.validateTitleTest()'><b>validateTitleTest</b><br>Test class: com.testcases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.testcases.LoginPageTest@33723e30</td></tr>
+<tr>
+<td title='com.testcases.HotelPageTest.BookHotelTest()'><b>BookHotelTest</b><br>Test class: com.testcases.HotelPageTest<br>Parameters: Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "9959823792"</td>
+<td></td>
+<td>39</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.SearchFlightTest()'><b>SearchFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Oneway, Hyderabad, Mumbai, fare_20211215, </td>
+<td></td>
+<td>14</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.User_is_in_FlightPageTest()'><b>User_is_in_FlightPageTest</b><br>Test class: com.testcases.FlightPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.FlightPageTest.BookFlightTest()'><b>BookFlightTest</b><br>Test class: com.testcases.FlightPageTest<br>Parameters: Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com</td>
+<td></td>
+<td>42</td>
+<td>com.testcases.FlightPageTest@74a10858</td></tr>
+<tr>
+<td title='com.testcases.HotelPageTest.BookHotelTest()'><b>BookHotelTest</b><br>Test class: com.testcases.HotelPageTest<br>Parameters: Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, "9959823792"</td>
+<td></td>
+<td>37</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.HotelPageTest.SearchHotelTest()'><b>SearchHotelTest</b><br>Test class: com.testcases.HotelPageTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.util.ExcelReader.getStringCellData(ExcelReader.java:37)
+	at com.util.ExcelReader.getTestData(ExcelReader.java:48)
+	at com.testcases.HotelPageTest.getSearchHotelData(HotelPageTest.java:87)
+	... 25 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1591107147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1591107147'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+	at com.util.ExcelReader.getStringCellData(ExcelReader.java:37)
+	at com.util.ExcelReader.getTestData(ExcelReader.java:48)
+	at com.testcases.HotelPageTest.getSearchHotelData(HotelPageTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>com.testcases.HotelPageTest@28ac3dc3</td></tr>
+</table><p>
+</body>
+</html>

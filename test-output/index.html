@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-GOIBIBO">
+              <span class="suite-name border-failed">GOIBIBO</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-GOIBIBO">
+                    <span>D:\LTI_Training\Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-GOIBIBO">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-GOIBIBO">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-GOIBIBO">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-GOIBIBO">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-GOIBIBO">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-GOIBIBO">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods, 1 failed,  1 skipped,  20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GOIBIBO" class="hide-methods failed suite-GOIBIBO"> (hide)</a> <!-- hide-methods failed suite-GOIBIBO -->
+                      <a href="#" panel-name="suite-GOIBIBO" class="show-methods failed suite-GOIBIBO"> (show)</a> <!-- show-methods failed suite-GOIBIBO -->
+                    </span>
+                    <div class="method-list-content failed suite-GOIBIBO">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="BookHotelTest(Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, &quot;99598237&quot;)">BookHotelTest(Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "99598237")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GOIBIBO -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-GOIBIBO" class="hide-methods skipped suite-GOIBIBO"> (hide)</a> <!-- hide-methods skipped suite-GOIBIBO -->
+                      <a href="#" panel-name="suite-GOIBIBO" class="show-methods skipped suite-GOIBIBO"> (show)</a> <!-- show-methods skipped suite-GOIBIBO -->
+                    </span>
+                    <div class="method-list-content skipped suite-GOIBIBO">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="SearchHotelTest">SearchHotelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-GOIBIBO -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GOIBIBO" class="hide-methods passed suite-GOIBIBO"> (hide)</a> <!-- hide-methods passed suite-GOIBIBO -->
+                      <a href="#" panel-name="suite-GOIBIBO" class="show-methods passed suite-GOIBIBO"> (show)</a> <!-- show-methods passed suite-GOIBIBO -->
+                    </span>
+                    <div class="method-list-content passed suite-GOIBIBO">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@g...)">BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@g...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com)">BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail....)">BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail)">BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com)">BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="BookHotelTest(Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, &quot;99598237...)">BookHotelTest(Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, "99598237...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="BookHotelTest(Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, &quot;9959823792&quot;)">BookHotelTest(Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, "9959823792")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="BookHotelTest(Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, &quot;9959823792&quot;)">BookHotelTest(Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "9959823792")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="BookHotelTest(Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, &quot;9959...)">BookHotelTest(Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, "9959...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="SearchFlightTest(Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220)">SearchFlightTest(Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="SearchFlightTest(Oneway, xyz, Pune, fare_20211215, )">SearchFlightTest(Oneway, xyz, Pune, fare_20211215, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="SearchFlightTest(Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220)">SearchFlightTest(Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="SearchFlightTest(Roundtrip, xyz, Chennai, fare_20211215, fare_20211220)">SearchFlightTest(Roundtrip, xyz, Chennai, fare_20211215, fare_20211220)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="SearchFlightTest(Oneway, Delhi, xyz, fare_20211215, )">SearchFlightTest(Oneway, Delhi, xyz, fare_20211215, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="SearchFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, )">SearchFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.FlightPageTest" hash-for-method="User_is_in_FlightPageTest">User_is_in_FlightPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.HotelPageTest" hash-for-method="Validate_User_in_HotelPageTest">Validate_User_in_HotelPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.LoginPageTest" hash-for-method="ValidorInvalidMobileNoTest(9959823792)">ValidorInvalidMobileNoTest(9959823792)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.LoginPageTest" hash-for-method="ValidorInvalidMobileNoTest(99598237)">ValidorInvalidMobileNoTest(99598237)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GOIBIBO" title="com.testcases.LoginPageTest" hash-for-method="validateTitleTest">validateTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GOIBIBO -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GOIBIBO" class="panel GOIBIBO">
+          <div class="suite-GOIBIBO-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testcases.HotelPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookHotelTest(Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, &quot;99598237&quot;)">
+                  </a> <!-- BookHotelTest(Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "99598237") -->
+                  <span class="method-name">BookHotelTest</span>
+                  <span class="parameters">(Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "99598237")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[2]/div/div/div[2]/div/div[2]/div[1]&quot;}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-NJFUNEJK&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\amara\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17da7c58c9ae4152e67c2e9cfe207d83
+*** Element info: {Using=xpath, value=//div[2]/div/div/div[2]/div/div[2]/div[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.pages.HotelPage.BookHotel(HotelPage.java:74)
+	at com.testcases.HotelPageTest.BookHotelTest(HotelPageTest.java:65)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GOIBIBO-class-failed -->
+          <div class="suite-GOIBIBO-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testcases.HotelPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchHotelTest">
+                  </a> <!-- SearchHotelTest -->
+                  <span class="method-name">SearchHotelTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.util.ExcelReader.getStringCellData(ExcelReader.java:37)
+	at com.util.ExcelReader.getTestData(ExcelReader.java:48)
+	at com.testcases.HotelPageTest.getSearchHotelData(HotelPageTest.java:87)
+	... 25 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GOIBIBO-class-skipped -->
+          <div class="suite-GOIBIBO-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.HotelPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookHotelTest(Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, &quot;99598237...)">
+                  </a> <!-- BookHotelTest(Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, "99598237...) -->
+                  <span class="method-name">BookHotelTest</span>
+                  <span class="parameters">(Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, "9959823792")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookHotelTest(Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, &quot;9959823792&quot;)">
+                  </a> <!-- BookHotelTest(Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, "9959823792") -->
+                  <span class="method-name">BookHotelTest</span>
+                  <span class="parameters">(Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, "9959823792")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookHotelTest(Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, &quot;9959823792&quot;)">
+                  </a> <!-- BookHotelTest(Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "9959823792") -->
+                  <span class="method-name">BookHotelTest</span>
+                  <span class="parameters">(Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "9959823792")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookHotelTest(Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, &quot;9959...)">
+                  </a> <!-- BookHotelTest(Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, "9959...) -->
+                  <span class="method-name">BookHotelTest</span>
+                  <span class="parameters">(Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, "9959823792")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_User_in_HotelPageTest">
+                  </a> <!-- Validate_User_in_HotelPageTest -->
+                  <span class="method-name">Validate_User_in_HotelPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GOIBIBO-class-passed -->
+          <div class="suite-GOIBIBO-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidorInvalidMobileNoTest(9959823792)">
+                  </a> <!-- ValidorInvalidMobileNoTest(9959823792) -->
+                  <span class="method-name">ValidorInvalidMobileNoTest</span>
+                  <span class="parameters">(9959823792)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidorInvalidMobileNoTest(99598237)">
+                  </a> <!-- ValidorInvalidMobileNoTest(99598237) -->
+                  <span class="method-name">ValidorInvalidMobileNoTest</span>
+                  <span class="parameters">(99598237)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTitleTest">
+                  </a> <!-- validateTitleTest -->
+                  <span class="method-name">validateTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GOIBIBO-class-passed -->
+          <div class="suite-GOIBIBO-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.FlightPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@g...)">
+                  </a> <!-- BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@g...) -->
+                  <span class="method-name">BookFlightTest</span>
+                  <span class="parameters">(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com)">
+                  </a> <!-- BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com) -->
+                  <span class="method-name">BookFlightTest</span>
+                  <span class="parameters">(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail....)">
+                  </a> <!-- BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail....) -->
+                  <span class="method-name">BookFlightTest</span>
+                  <span class="parameters">(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail)">
+                  </a> <!-- BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail) -->
+                  <span class="method-name">BookFlightTest</span>
+                  <span class="parameters">(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com)">
+                  </a> <!-- BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com) -->
+                  <span class="method-name">BookFlightTest</span>
+                  <span class="parameters">(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlightTest(Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220)">
+                  </a> <!-- SearchFlightTest(Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220) -->
+                  <span class="method-name">SearchFlightTest</span>
+                  <span class="parameters">(Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlightTest(Oneway, xyz, Pune, fare_20211215, )">
+                  </a> <!-- SearchFlightTest(Oneway, xyz, Pune, fare_20211215, ) -->
+                  <span class="method-name">SearchFlightTest</span>
+                  <span class="parameters">(Oneway, xyz, Pune, fare_20211215, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlightTest(Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220)">
+                  </a> <!-- SearchFlightTest(Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220) -->
+                  <span class="method-name">SearchFlightTest</span>
+                  <span class="parameters">(Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlightTest(Roundtrip, xyz, Chennai, fare_20211215, fare_20211220)">
+                  </a> <!-- SearchFlightTest(Roundtrip, xyz, Chennai, fare_20211215, fare_20211220) -->
+                  <span class="method-name">SearchFlightTest</span>
+                  <span class="parameters">(Roundtrip, xyz, Chennai, fare_20211215, fare_20211220)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlightTest(Oneway, Delhi, xyz, fare_20211215, )">
+                  </a> <!-- SearchFlightTest(Oneway, Delhi, xyz, fare_20211215, ) -->
+                  <span class="method-name">SearchFlightTest</span>
+                  <span class="parameters">(Oneway, Delhi, xyz, fare_20211215, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, )">
+                  </a> <!-- SearchFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, ) -->
+                  <span class="method-name">SearchFlightTest</span>
+                  <span class="parameters">(Oneway, Hyderabad, Mumbai, fare_20211215, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_is_in_FlightPageTest">
+                  </a> <!-- User_is_in_FlightPageTest -->
+                  <span class="method-name">User_is_in_FlightPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GOIBIBO-class-passed -->
+        </div> <!-- panel GOIBIBO -->
+        <div panel-name="test-xml-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\LTI_Training\Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;GOIBIBO&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.testcases.FlightPageTest&quot;/&gt;
+      &lt;class name=&quot;com.testcases.HotelPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- GOIBIBO --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GOIBIBO</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GOIBIBO</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GOIBIBO</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GOIBIBO');
+function tableData_GOIBIBO() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'BookFlightTest')
+data.setCell(0, 2, 'com.testcases.FlightPageTest')
+data.setCell(0, 3, 42784);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'BookFlightTest')
+data.setCell(1, 2, 'com.testcases.FlightPageTest')
+data.setCell(1, 3, 42035);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'BookHotelTest')
+data.setCell(2, 2, 'com.testcases.HotelPageTest')
+data.setCell(2, 3, 39864);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'BookHotelTest')
+data.setCell(3, 2, 'com.testcases.HotelPageTest')
+data.setCell(3, 3, 38675);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'BookHotelTest')
+data.setCell(4, 2, 'com.testcases.HotelPageTest')
+data.setCell(4, 3, 37434);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'BookHotelTest')
+data.setCell(5, 2, 'com.testcases.HotelPageTest')
+data.setCell(5, 3, 37260);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'BookFlightTest')
+data.setCell(6, 2, 'com.testcases.FlightPageTest')
+data.setCell(6, 3, 34590);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'BookFlightTest')
+data.setCell(7, 2, 'com.testcases.FlightPageTest')
+data.setCell(7, 3, 32730);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'BookFlightTest')
+data.setCell(8, 2, 'com.testcases.FlightPageTest')
+data.setCell(8, 3, 32658);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'SearchFlightTest')
+data.setCell(9, 2, 'com.testcases.FlightPageTest')
+data.setCell(9, 3, 21868);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SearchFlightTest')
+data.setCell(10, 2, 'com.testcases.FlightPageTest')
+data.setCell(10, 3, 14775);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'BookHotelTest')
+data.setCell(11, 2, 'com.testcases.HotelPageTest')
+data.setCell(11, 3, 14550);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'SearchFlightTest')
+data.setCell(12, 2, 'com.testcases.FlightPageTest')
+data.setCell(12, 3, 9450);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'SearchFlightTest')
+data.setCell(13, 2, 'com.testcases.FlightPageTest')
+data.setCell(13, 3, 9348);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'SearchFlightTest')
+data.setCell(14, 2, 'com.testcases.FlightPageTest')
+data.setCell(14, 3, 8657);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'SearchFlightTest')
+data.setCell(15, 2, 'com.testcases.FlightPageTest')
+data.setCell(15, 3, 8530);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ValidorInvalidMobileNoTest')
+data.setCell(16, 2, 'com.testcases.LoginPageTest')
+data.setCell(16, 3, 8414);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ValidorInvalidMobileNoTest')
+data.setCell(17, 2, 'com.testcases.LoginPageTest')
+data.setCell(17, 3, 6998);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Validate_User_in_HotelPageTest')
+data.setCell(18, 2, 'com.testcases.HotelPageTest')
+data.setCell(18, 3, 5414);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'User_is_in_FlightPageTest')
+data.setCell(19, 2, 'com.testcases.FlightPageTest')
+data.setCell(19, 3, 4173);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateTitleTest')
+data.setCell(20, 2, 'com.testcases.LoginPageTest')
+data.setCell(20, 3, 809);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'SearchHotelTest')
+data.setCell(21, 2, 'com.testcases.HotelPageTest')
+data.setCell(21, 3, 0);
+window.suiteTableData['GOIBIBO']= { tableData: data, tableDiv: 'times-div-GOIBIBO'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-GOIBIBO">
+              </div> <!-- times-div-GOIBIBO -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GOIBIBO</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GOIBIBO" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.FlightPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Reportsetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.HotelPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Reportsetup</span>
+                <span class="method-start">503 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Reportsetup</span>
+                <span class="method-start">504 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">553 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTitleTest</span>
+                <span class="method-start">23045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">23858 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">26534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidorInvalidMobileNoTest(9959823792)</span>
+                <span class="method-start">37690 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">44691 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">45739 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidorInvalidMobileNoTest(99598237)</span>
+                <span class="method-start">55484 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">63903 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.FlightPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">64846 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">User_is_in_FlightPageTest</span>
+                <span class="method-start">74337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">78512 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">79573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, )</span>
+                <span class="method-start">89595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">104373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightTest(Oneway, xyz, Pune, fare_20211215, )</span>
+                <span class="method-start">114793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">124142 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">125009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightTest(Oneway, Delhi, xyz, fare_20211215, )</span>
+                <span class="method-start">132907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">141566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">142418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightTest(Roundtrip, Mumbai, Kolkata, fare_20211215, fare_20211220)</span>
+                <span class="method-start">151001 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">172871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">173787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightTest(Roundtrip, xyz, Chennai, fare_20211215, fare_20211220)</span>
+                <span class="method-start">183220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">192671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">193690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchFlightTest(Roundtrip, Bengaluru, xyz, fare_20211215, fare_20211220)</span>
+                <span class="method-start">202822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">211353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">212388 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail.com)</span>
+                <span class="method-start">221624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">263660 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">265042 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, , Sai, Kiran, amaraganisaikiran99@gmail....)</span>
+                <span class="method-start">279250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">311909 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">313465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com)</span>
+                <span class="method-start">334282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">377068 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">378146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookFlightTest(Roundtrip, Hyderabad, Mumbai, fare_20211215, fare_20211220, Mr, Sai, Kiran123, amaraganisaikiran99@g...)</span>
+                <span class="method-start">396885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">431476 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">432379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookFlightTest(Oneway, Hyderabad, Mumbai, fare_20211215, , Mr, Sai, Kiran, amaraganisaikiran99@gmail)</span>
+                <span class="method-start">449555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">482286 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.HotelPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">483353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_User_in_HotelPageTest</span>
+                <span class="method-start">494941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">500356 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">501824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookHotelTest(Agra, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "9959823792")</span>
+                <span class="method-start">510788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">550653 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">552041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookHotelTest(Delhi, date_15_11_2021, date_20_11_2021, Mr, Sai123, Kiran, amaraganisaikiran99@gmail.com, "99598237...)</span>
+                <span class="method-start">564632 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">603308 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">604608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookHotelTest(Hyderabad, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran124, amaraganisaikiran99@gmail.com, "9959...)</span>
+                <span class="method-start">621586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">659021 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">660198 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BookHotelTest(Chennai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99.com, "9959823792")</span>
+                <span class="method-start">674372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">711633 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">712831 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BookHotelTest(Mumbai, date_15_11_2021, date_20_11_2021, Mr, Sai, Kiran, amaraganisaikiran99@gmail.com, "99598237")</span>
+                <span class="method-start">726380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closesetup</span>
+                <span class="method-start">740934 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.FlightPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">GenerateReport</span>
+                <span class="method-start">741988 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.HotelPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">GenerateReport</span>
+                <span class="method-start">744004 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">GenerateReport</span>
+                <span class="method-start">744083 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
